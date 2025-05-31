@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<title>Azaan Humair Store</title>
+<link rel="icon" type="image/png" href="logo.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f8ff; color: #333; }
+    header {
+      background: linear-gradient(to right, #43e97b, #38f9d7);
+      color: white; padding: 40px 20px; text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    nav {
+      background: #222; display: flex; justify-content: center; padding: 15px;
+    }
+    nav a {
+      color: white; text-decoration: none; margin: 0 20px;
+      font-weight: bold; padding: 8px 15px; border-radius: 5px;
+      transition: 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background: #38f9d7; color: #000;
+    }
+    .main {
+      display: flex; flex-wrap: wrap; justify-content: center; padding: 40px;
+      gap: 20px;
+    }
+    .product {
+      background: white; border-radius: 10px; padding: 20px;
+      width: 220px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover { transform: scale(1.05); }
+    .product img {
+      width: 100%; border-radius: 8px; margin-bottom: 10px;
+    }
+    .product h3 { margin: 10px 0; }
+    .product p { color: #555; margin-bottom: 10px; }
+    .product button {
+      background: #43e97b; color: white; border: none;
+      padding: 10px 15px; border-radius: 5px; cursor: pointer;
+    }
+    .product button:hover { background: #35c96d; }
+    footer {
+      background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Products</h1>
+    <p>Browse our collection of awesome items!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="active">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="main">
+    <div class="product">
+      <img src="image1.jpg" alt="T-shirt" />
+      <h3>T-shirt</h3>
+      <p>$40</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="image2.jpg" alt="Smart Watch" style="width: 63%;" />
+      <h3>Smart Watch</h3>
+      <p>$65</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product">
+      <img src="image3.jpg" alt="Backpack" style="width: 60%;"/>
+      <h3>Backpack</h3>
+      <p>$25</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My E-Commerce Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
